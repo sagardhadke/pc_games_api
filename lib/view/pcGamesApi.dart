@@ -66,7 +66,7 @@ class _MyPcGamesApiState extends State<MyPcGamesApi> {
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Image.network(
-                                    "https://www.freetogame.com/g/516/thumbnail.jpg",
+                                    "${ofgames![i].thumbnail}",
                                     width: 120,
                                     height: 120,
                                   ),
@@ -78,31 +78,31 @@ class _MyPcGamesApiState extends State<MyPcGamesApi> {
                                     children: [
                                       SizedBox(height: 5),
                                       Text(
-                                        "PUBG: BATTLEGROUNDS",
+                                        "${ofgames![i].title}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
+                                        "${ofgames![i].shortDescription}",
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         style: TextStyle(color: Colors.white),
                                       ),
                                       Text(
-                                        "PC (Windows)",
+                                        "${ofgames![i].developer}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Developer : KRAFTON, Inc.",
+                                        "Developer : ${ofgames![i].developer}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Releae Date : 2022-01-12",
+                                        "Releae Date : ${ofgames![i].releaseDate}",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),
