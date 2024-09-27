@@ -28,7 +28,9 @@ class PcGames {
         freetogameProfileUrl = json["freetogame_profile_url"];
     }
 
-    
+    static List <PcGames>? ofgames (List ofData){
+      return ofData.map((e) => PcGames.fromJson(e)).toList();
+    }
 
     Map<String, dynamic> toJson() {
         final Map<String, dynamic> _data = <String, dynamic>{};
